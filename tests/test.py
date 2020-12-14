@@ -1,5 +1,5 @@
 from unittest import TestCase, main
-import stringindex as si
+import queryparams as qp
 from pprint import PrettyPrinter
 
 
@@ -17,7 +17,7 @@ class TestStringIndex(TestCase):
             'orders[date]': ['asc'],
         }
 
-        result = si.parse(scenario)
+        result = qp.parse(scenario)
         pp = PrettyPrinter()
         pp.pprint(result)
 
